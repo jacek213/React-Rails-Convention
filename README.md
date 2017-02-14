@@ -21,12 +21,16 @@ touch lib/tasks/start.rake
 
 
 Add to lib/tasks.start.rake:  
+```ruby
 task :start do  
   exec 'foreman start -p 3000'  
-end  
+end
+``` 
 
 Add to head tag in client/public/index.html(only if using react-bootstrap or bootstrap):  
+```html
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">  
+```
 
 Add to package.json: "proxy": "http://localhost:3000/,  
 
@@ -40,4 +44,4 @@ Cd to top folder and run: rake start. If everything works do:
 Git add .  
 Git commit -m "Init NetguruSPA”  
 
-###### Any suggestions, be it milestones, folder structure or dependencies are very welcome.
+##### Any suggestions, be it milestones, folder structure or dependencies are very welcome.
