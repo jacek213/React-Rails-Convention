@@ -51,7 +51,7 @@ npm i ava --D
 
 Cd to top folder and run:  
 ```text
-rake start.
+rake start
 ```
 
 If everything works do:  
