@@ -1,14 +1,11 @@
-This is a demonstration of the basic full SPA react setup.  
+## This is a demonstration of the basic full SPA react setup.  
 
-The goal of the app is to provide a convention for React + Rails Combo.  
-
-It has no rails oriented setup(for now at least). Any suggestions, be it milestones,
-folder structure, dependencies are very welcome.  
+### The goal of the app is to provide a convention for React + Rails Combo.   
 
 There are two types of apps in Netguru(source: Pavel "Gdański Koksu" Jędrzejczyk).  
 One type is full SPA app, and this repo is the representation of it's initial setup.
 
-To create an app with latest tools(mostly dev ones):  
+# To scaffold an app:  
 
 npm i -g create-react-app  
 rails new netguruSPA --api  
@@ -33,12 +30,14 @@ Add to head tag in client/public/index.html(only if using react-bootstrap or boo
 
 Add to package.json: "proxy": "http://localhost:3000/,  
 
-cd client && npm i dotenv i18n-js lodash moment redux redux-form redux-saga react-router   react-router-redux react-datepicker react-bootstrap --save  
+cd client && npm i dotenv i18n-js lodash moment redux react-redux redux-form redux-saga react-router react-router-redux react-datepicker react-bootstrap --S  
 
 And lastly:  
-npm i ava --save-dev  
+npm i ava --D  
 
 
-Cd to top folder and run rake start. If everything works do:  
+Cd to top folder and run: rake start. If everything works do:  
 Git add .  
-Git commit -m „Init NetguruSPA”  
+Git commit -m "Init NetguruSPA”  
+
+###### Any suggestions, be it milestones, folder structure or dependencies are very welcome.
