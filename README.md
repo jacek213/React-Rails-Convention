@@ -12,7 +12,7 @@ npm i -g create-react-app
 rails new netguruSPA --api  
 git init  
 create-react-app client  
-echo "client/node_modules” >> Gemfile  
+echo "client/node_modules” >> .gitignore  
 echo "gem 'foreman'" >> Gemfile  
 bundle install  
 touch Procfile  
